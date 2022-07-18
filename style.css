@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* header nav */
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
+    row-gap: 0.3rem;
+}
+
+/* DESKTOP */
+
+header {
+    top: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    background-color: #0e2f56;
+}
+
+header nav img {
+    height: 13rem;
+    width: auto;
+}
+
+/* class video and description */
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container video {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    font-family: 'Rubik';
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    opacity: 0.8;
+    top: 40%;
+    transform: translate(0, -40%);
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    text-align: center;
+}
+
+div.overlay h1 {
+    font-weight: 500;
+}
+
+div.overlay h2 {
+    font-weight: 400;
+}
+
+div.overlay h3 {
+    font-weight: 300;
+}
+
+/* Who are we */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 13rem;
+    width: 100%;
+    background-color: #560e53;
+    color: white;
+    font-family: 'Rubik';
+    text-align: center;
+}
+
+.about h1 {
+    font-weight: 500;
+}
+
+.about h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 70%;
+}
+
+/* Products */
+
+.products {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+    background-color: #1c5dab;
+    color: white;
+    font-family: 'Rubik';
+    column-gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+div#prodtitle.products.text {
+    display: flex;
+    justify-content: center;
+}
+
+div#prodtitle.products.text {
+    display: flex;
+    justify-content: center;
+}
+
+.products .text {
+    width: 50%;
+    text-align: center;
+    padding-right: rem;
+}
+
+.products .text h1 {
+    font-weight: 400;
+}
+
+.products .text h2 {
+    font-weight: 300;
+}
+
+.products img {
+    width: 50%;
+    height: 100%;
+    right: 0;
+}
+
+/* employees */
+
+div#who-title.products.text {
+    display: flex;
+    justify-content: center;
+    background-color: #0e2f56;
+}
+
+.employees {
+    display: flex;
+    height: fit-content;
+    background-color: #0e2f56;
+}
+
+.employees img {
+    height: 20rem;
+    width: auto;
+    /* border-radius: 50%; */
+}
+
+/* mobile */
+
+@media screen and (max-width:480px) {
+
+    header nav img {
+        height: 8rem;
+        width: auto;
+    }
+
+    .overlay {
+        background-color: transparent;
+        width: 100%;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        opacity: 0.9;
+    }
+
+    .overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .overlay h2 {
+        font-size: 1rem;
+    }
+
+    .overlay h3 {
+        font-size: 0.7rem;
+    }
+
+    /* Who are we */
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 9rem;
+        width: 100%;
+        background-color: #560e53;
+        color: white;
+        font-family: 'Rubik';
+        text-align: center;
+    }
+
+    .about h1 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .about h2 {
+        font-size: 0.8rem;
+        font-weight: 300;
+        width: 70%;
+    }
+}
+
+/* tablet */
+
+@media screen and (min-width: 481px) and (max-width:850px) {
+    header nav img {
+        height: 14rem;
+        width: auto;
+    }
+
+    .overlay {
+        background-color: transparent;
+        width: 100%;
+        top: 30%;
+        left: 55%;
+        transform: translate(-55%, 0);
+        opacity: 0.9;
+    }
+
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .overlay h2 {
+        font-size: 1.5rem;
+    }
+
+    .overlay h3 {
+        font-size: 1rem;
+    }
+
+    /* Who are we */
+
+    .about {
+        height: 15rem;
+    }
+
+    .about h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        width: 70%;
+    }
+}
