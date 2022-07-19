@@ -42,6 +42,8 @@ header nav img {
 .container {
     position: relative;
     width: 100%;
+    margin-top: -0.1rem;
+    margin-bottom: -0.3rem;
 }
 
 .container video {
@@ -110,14 +112,14 @@ div.overlay h3 {
     background-color: #1c5dab;
     color: white;
     font-family: 'Rubik';
-    column-gap: 1rem;
     align-items: center;
     text-align: center;
 }
 
 div#prodtitle.products.text {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
+    text-align: center;
 }
 
 div#prodtitle.products.text {
@@ -125,10 +127,9 @@ div#prodtitle.products.text {
     justify-content: center;
 }
 
-.products .text {
+div.products .text {
     width: 50%;
     text-align: center;
-    padding-right: rem;
 }
 
 .products .text h1 {
@@ -147,6 +148,10 @@ div#prodtitle.products.text {
 
 /* employees */
 
+.mobile {
+    display: none;
+}
+
 div#who-title.products.text {
     display: flex;
     justify-content: center;
@@ -155,14 +160,66 @@ div#who-title.products.text {
 
 .employees {
     display: flex;
-    height: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    height: 33rem;
     background-color: #0e2f56;
+    /* column-gap: 1rem; */
+    align-items: center;
 }
 
 .employees img {
-    height: 20rem;
+    height: 100%;
     width: auto;
-    /* border-radius: 50%; */
+    border-radius: 1.9rem;
+    padding: 1rem 0.5rem;
+}
+
+.employees div.amir {
+    text-align: center;
+    width: 70%;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.employees div.miguel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    color: white;
+}
+
+.employees .amir h1 {
+    font-weight: 500;
+}
+
+.employees .amir h2 {
+    font-weight: 300;
+}
+
+.employees .miguel h1 {
+    font-weight: 500;
+}
+
+.employees .miguel h2 {
+    display: flex;
+    font-weight: 300;
+    width: 70%;
+    text-align: center;
+}
+
+.employees h1, h2 {
+    font-family: 'Rubik';
+}
+
+footer {
+    display: flex;
+    height: 20rem;
+    background-color: #560e53;
+    width: 100%;
 }
 
 /* mobile */
@@ -219,11 +276,126 @@ div#who-title.products.text {
         font-weight: 300;
         width: 70%;
     }
+
+    /* Products */
+
+    div#prodtitle.products.text h1{
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+    
+    .products .text h1 {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    
+    .products .text h2 {
+        font-size: 0.5rem;
+        font-weight: 300;
+    }
+
+    /* founders and crafters */
+
+    /* founders and crafters */
+
+    .employees .amir, .miguel {
+        display: none;
+    }
+
+    .employees .mobile {
+        background-color: #0e2f56;
+        color: white;
+        height: fit-content;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+        margin-top: -1rem;
+    }
+
+    .employees .mobile .amir-mob {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: -2.2rem;
+        width: 50%;
+    }
+
+    .employees .mobile .miguel-mob {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+    }
+
+    .employees .mobile .amir-mob h1{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: -0.1rem;
+    }
+
+    .employees .mobile .miguel-mob h1{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: -0.1rem;
+    }
+
+    .employees .mobile .amir-mob h2{
+        font-size: 0.7rem;
+        width: 75%;
+        font-weight: 300;
+    }
+
+    .employees .mobile .miguel-mob h2{
+        font-size: 0.7rem;
+        width: 75%;
+        font-weight: 300;
+    }
+
+    div#who-title.products.text h1 {
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+    
+    div#who-title.products.text {
+        display: flex;
+        justify-content: center;
+        background-color: #0e2f56;
+        font-size: ;
+    }
+    
+    .employees {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 15rem;
+        background-color: #0e2f56;
+        /* column-gap: 1rem; */
+        align-items: center;
+
+    }
+    
+    .employees img {
+        height: 100%;
+        width: auto;
+        border-radius: 10%;
+    }
+    
 }
 
 /* tablet */
 
 @media screen and (min-width: 481px) and (max-width:850px) {
+
+    html {
+        font-size: 16px;
+    }
+
     header nav img {
         height: 14rem;
         width: auto;
@@ -260,5 +432,93 @@ div#who-title.products.text {
         font-size: 1.5rem;
         font-weight: 300;
         width: 70%;
+    }
+
+    /* Products */
+
+    div#prodtitle.products.text h1{
+        font-weight: 500;
+    }
+    
+    .products .text h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    
+    .products .text h2 {
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+
+    #second-bike {
+        padding-right: 2rem;
+    }
+
+    /* founders and crafters */
+
+    div#who-title.products.text h1 {
+        font-weight: 500;
+    }
+    
+    div#who-title.products.text {
+        display: flex;
+        justify-content: center;
+        background-color: #0e2f56;
+    }
+    
+    .employees {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        height: 18rem;
+        background-color: #0e2f56;
+        /* column-gap: 1rem; */
+        align-items: center;
+
+    }
+    
+    .employees img {
+        height: 90%;
+        width: auto;
+        border-radius: 10%;
+        
+    }
+    
+    .employees h1, h2 {
+        font-family: 'Rubik';
+    }
+
+    .employees .amir {
+        text-align: center;
+        width: 20%;
+        color: white;
+    }
+    
+    .employees .miguel {
+        text-align: center;
+        color: white;
+        width: 20%;
+        /* margin-left: 1rem; */
+    }
+    
+    div.employees div.amir h1 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    div.employees div.amir h2 {
+        font-size: 0.75rem;
+        font-weight: 200;
+    }
+    
+    .employees .miguel h1 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .employees .miguel h2 {
+        font-size: 0.75rem;
+        font-weight: 200;
     }
 }
