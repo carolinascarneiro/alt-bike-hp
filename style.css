@@ -45,6 +45,10 @@ header nav .items h2 {
     font-size: 1.4rem;
 }
 
+header nav .items h2:hover {
+    cursor: pointer;
+}
+
 header nav img {
     height: 10rem;
     width: auto;
@@ -290,9 +294,23 @@ footer .second-level h2 {
 
 @media screen and (max-width:480px) {
 
+    header nav .items{
+        justify-content: flex-end;
+        column-gap: 4px;
+        padding-right: 1rem;
+    }
+
     header nav img {
-        height: 8rem;
+        height: 5rem;
         width: auto;
+    }
+
+    header nav .items h2 {
+        font-size: 0.7rem;
+        background-color: white;
+        color: #0e2f56;
+        padding: 5px;
+        border-radius: 10px;
     }
 
     .overlay {
@@ -322,7 +340,8 @@ footer .second-level h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 9rem;
+        height: fit-content;
+        align-items: center;
         width: 100%;
         background-color: #560e53;
         color: white;
@@ -349,25 +368,31 @@ footer .second-level h2 {
     }
     
     .products .text h1 {
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: 400;
+        padding: 0rem 0.2rem;
     }
     
     .products .text h2 {
-        font-size: 0.5rem;
-        font-weight: 300;
+        font-size: 0.6rem;
+        font-weight: 500;
+        padding: 0rem 0.2rem;
     }
 
     /* founders and crafters */
 
     /* founders and crafters */
 
-    .employees .amir, .miguel {
+    div.employees div.amir {
+        display: none;
+    }
+
+    div.employees div.miguel {
         display: none;
     }
 
     .employees .mobile {
-        background-color: #0e2f56;
+        background-color: #560e53;
         color: white;
         height: fit-content;
         display: flex;
@@ -375,7 +400,8 @@ footer .second-level h2 {
         justify-content: center;
         height: fit-content;
         width: 100%;
-        margin-top: -1rem;
+        margin-top: -1.15rem;
+        padding-bottom: 0.4rem;
     }
 
     .employees .mobile .amir-mob {
@@ -427,7 +453,7 @@ footer .second-level h2 {
     div#who-title.products.text {
         display: flex;
         justify-content: center;
-        background-color: #0e2f56;
+        background-color: #560e53;
         font-size: ;
     }
     
@@ -438,7 +464,7 @@ footer .second-level h2 {
         flex-wrap: wrap;
         justify-content: center;
         height: 15rem;
-        background-color: #0e2f56;
+        background-color: #560e53;
         /* column-gap: 1rem; */
         align-items: center;
 
@@ -449,7 +475,34 @@ footer .second-level h2 {
         width: auto;
         border-radius: 10%;
     }
+
+    /* footer */
     
+    footer .first-level .contact {
+        display: none;
+    }
+
+    footer .first-level .menu {
+        display: none;
+    }
+
+    footer {
+        margin-top: 5.5rem;
+        padding-top: ;
+    }
+
+    footer .first-level .newsletter-social h1 {
+        font-size: 1rem;
+    }
+
+    footer .first-level .newsletter-social .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .second-level h2 {
+        font-size: 0.7rem;
+    }
 }
 
 /* tablet */
