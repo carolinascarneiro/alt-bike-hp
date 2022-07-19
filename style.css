@@ -41,7 +41,8 @@ header nav .items {
 }
 
 header nav .items h2 {
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 1.4rem;
 }
 
 header nav img {
@@ -168,6 +169,10 @@ div#who-title.products.text {
     display: flex;
     justify-content: center;
     background-color: #560e53;
+}
+
+div#who-title.products.text h1 {
+    font-weight: 500;
 }
 
 .employees {
