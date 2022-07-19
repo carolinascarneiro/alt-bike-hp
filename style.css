@@ -235,6 +235,7 @@ footer {
     height: fit-content;
     background-color: #0e2f56;
     width: 100%;
+    padding: 1rem 0;
 }
 
 footer .first-level{
