@@ -26,14 +26,26 @@ header {
 header nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: fit-content;
     width: 100%;
     background-color: #0e2f56;
 }
 
+header nav .items {
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
+    color: white;
+    justify-content: space-between;
+}
+
+header nav .items h2 {
+    font-weight: 300;
+}
+
 header nav img {
-    height: 13rem;
+    height: 10rem;
     width: auto;
 }
 
@@ -78,13 +90,13 @@ div.overlay h3 {
     font-weight: 300;
 }
 
-/* Who are we */
+/* Our mission */
 
 .about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 13rem;
+    height: 10rem;
     width: 100%;
     background-color: #560e53;
     color: white;
@@ -94,6 +106,7 @@ div.overlay h3 {
 
 .about h1 {
     font-weight: 500;
+    margin-bottom: -0.5rem;
 }
 
 .about h2 {
@@ -122,9 +135,8 @@ div#prodtitle.products.text {
     text-align: center;
 }
 
-div#prodtitle.products.text {
-    display: flex;
-    justify-content: center;
+div#prodtitle.products.text h1 {
+    font-weight: 500;
 }
 
 div.products .text {
@@ -155,7 +167,7 @@ div.products .text {
 div#who-title.products.text {
     display: flex;
     justify-content: center;
-    background-color: #0e2f56;
+    background-color: #560e53;
 }
 
 .employees {
@@ -163,7 +175,7 @@ div#who-title.products.text {
     flex-direction: row;
     justify-content: center;
     height: 33rem;
-    background-color: #0e2f56;
+    background-color: #560e53;
     /* column-gap: 1rem; */
     align-items: center;
 }
@@ -215,11 +227,57 @@ div#who-title.products.text {
     font-family: 'Rubik';
 }
 
+/* footer */
+
 footer {
     display: flex;
-    height: 20rem;
-    background-color: #560e53;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #0e2f56;
     width: 100%;
+}
+
+footer .first-level{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 15;
+    background-color: #0e2f56;
+    width: 100%;
+    color: white;
+    font-family: 'Rubik';
+}
+
+footer .first-level h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+footer .first-level h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer .first-level .social i {
+    margin-top: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+footer .second-level{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 5;
+    background-color: #0e2f56;
+    width: 100%;
+    color: white;
+    font-family: 'Rubik';
+}
+
+footer .second-level h2 {
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /* mobile */
